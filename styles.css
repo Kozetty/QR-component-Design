@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root {
+    --guide-border: 1px solid black;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+}
+p {
+    font-size: 15px;
+}
+/* Basic styles end here */
+
+
+.card {
+    max-width: 375px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* QR image section */
+.qr-container {
+    width: 100%;
+}
+.qr-image {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+
+/* QR description section */
+.qr-description-container {
+    width: 100%;
+    margin-top: 2rem;
+    /* border: var(--guide-border); */
+}
+.qr-name {
+    padding-bottom: 1.5rem;
+    font-size: 2.3rem;
+    text-align: center;
+    color: hsl(218, 44%, 15%);
+}
+.qr-description {
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: hsl(220, 15%, 55%);
+}
+
+/* Desktop Responsiveness */
+@media screen and (min-width: 500px){
+    .card {
+        max-width: 320px;
+    }
+    .qr-name {
+        font-size: 2rem;
+    }
+    .qr-description {
+        font-size: 1.5rem;
+    }
+}
